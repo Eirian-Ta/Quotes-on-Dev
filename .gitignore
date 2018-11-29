@@ -1,0 +1,55 @@
+# Ignore logs and databases #
+############################
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# My Personal Notes #
+######################
+*.doc
+*.docx
+
+# Ignore everything in "wp-content" except these directories. #
+/*
+!.gitignore
+!themes/
+!uploads/
+!README.md
+
+# Ignore everything in "uploads" except files. #
+uploads/*
+!uploads/wp-migrate-db/*.sql.gz
+
+# Ignore everything in "themes" except the active theme. #
+themes/*
+!themes/quotesondev/
+
+# Ignore packages #
+themes/quotesondev/node_modules/

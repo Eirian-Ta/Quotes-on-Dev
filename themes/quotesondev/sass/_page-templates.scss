@@ -1,0 +1,291 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+body {
+  background: $color__background-body;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 3rem;
+
+  * {
+    font-family: $font__main;
+    font-weight: normal;
+    font-style: normal;
+
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: none!important;
+  border: $solid__border!important;
+  border-radius: 3px!important;
+  color: $color__green-brand!important;
+  padding: .75rem 2.25rem!important;
+  box-shadow: none!important;
+  text-shadow: none!important;
+  font-size: 1.25rem!important;
+
+  &:hover {
+    border: 2px solid $color__link-hover!important;
+    color: $color__link-hover!important;
+  }
+}
+
+#new-quote-button {
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+}
+
+@media #{$desktop} {
+  .site-content {
+    margin: ($base__space-unit * 3) 175px $base__space-unit;
+    position: relative;
+
+    &:before, &:after {
+      color: $color__green-brand;
+      font-family: 'FontAwesome';
+      font-size: 125px;
+      line-height: 125px;
+      position: absolute;
+      top: 0;
+    }
+  
+    &:before {
+      content: '\f10d';
+      left: -175px;
+    }
+  
+    &:after {
+      content: '\f10e';
+      right: -175px;
+    } 
+  }
+}
+
+
+
+article {
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+
+    @media #{$desktop} {
+      font-size: 2.5rem;
+    }
+
+    @media #{$tablet} {
+      font-size: 1.75rem;
+    }
+  }
+
+  .entry-meta {
+    margin-bottom: 3rem;
+
+    h3, span {
+      display: inline;
+      font-size: 1.25rem;
+    }
+  }   
+}
+
+
+
+
+
+
+//HEADER
+
+.logo img {
+    display: block;
+    width: 300px;
+
+  @media #{$tablet} {
+    width: 500px;
+  }
+
+  @media #{$desktop} {
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+
+//FOOTER
+
+.site-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4.5rem 0 3rem;
+
+  @media #{$desktop} {
+    justify-content: flex-end;
+  }
+
+  p {
+    margin: 0;
+    padding-left: 1rem;
+  } 
+}
+
+
+#primary-menu ul {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-right: $dotted__border;
+    line-height: 1;
+    padding: 0 1rem;
+  }
+}
+
+
+
+//SUBMIT FORM
+
+#quote-submission-form {
+
+  label {
+    margin-right: 40%;
+  }
+
+  .submit-form-input {
+    background: none;
+    border: $solid__border!important;
+    width:60%;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+  }
+
+  #quote-content {
+    width:100%;
+  }
+}
+
+
+
+//404 PAGE
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  label {
+    float: left;
+    min-width: 200px;
+
+
+    input[type=search] {
+      width: 240px;
+      font-size: 1.25rem;
+      background-color: #222;
+      border: $solid__border;
+      border-radius: 3px;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      padding: .25rem .5rem;
+    }
+
+    input[type=search]:focus {
+      color: white!important;
+    }
+  }
+
+  .search-submit {
+    background: none;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+
+    .icon-search {
+      color: $color__green-brand;
+      font-size: 1.5rem;
+
+     .fa-search:before {
+        content: "\f002";
+        font-family: 'FontAwesome';
+      }
+    }
+  }
+}
+
+
+
+//ABOUT PAGE
+
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+
+
+//ARCHIVES PAGE
+
+.browse-archives {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-bottom: .5rem;
+      margin-right: 1.125rem;
+    }
+  }
+}
+
+
+//CATEGORY PAGE
+
+.category {
+  h2.page-title {
+    border-bottom: $dotted__border;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 2em;
+    margin: .67em 0;
+  }
+
+  article {
+    border-bottom: $dotted__border;
+  }  
+}
+
+
+//SINGLE PAGE
+
+.single {
+  article {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+
